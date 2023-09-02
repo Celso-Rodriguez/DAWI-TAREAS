@@ -15,7 +15,7 @@
 <body>
 
 	<div class="container" >
-<h1>Registra Alumno</h1>
+<h1>Registra Concurso</h1>
 
 	<form id="id_form"> 
 		<div class="row" style="margin-top: 5%">
@@ -28,55 +28,10 @@
 					<input class="form-control" type="text" id="id_nombre" name="nombre" placeholder="Ingrese el nombre" maxlength="40">
 				</div>
 			</div>
-			<div class="form-group  col-sm-6">
-				<div class="col-sm-4">
-					<label class="control-label" for="id_dni">DNI</label>
-				</div>
-				<div class="col-sm-6">
-					<input class="form-control" type="text" id="id_dni" name="dni" placeholder="Ingrese el dni" maxlength="8">
-		 		</div>
-			</div>
+		</div>	
 		
-		</div>
-		<div class="row" style="margin-top: 0%">
-			<div class="form-group col-sm-6" >
-				<div class="col-sm-4" >
-					<label class="control-label" for="id_correo">Correo</label>
-				</div>
-				<div class="col-sm-8">
-					<input class="form-control" type="text" id="id_correo" name="correo" placeholder="Ingrese el correo" maxlength="100">
-				</div>
-			</div>
-			<div class="form-group  col-sm-6">
-				<div class="col-sm-4">
-					<label class="control-label" for="id_fecha">Fecha de Nacimiento</label>
-				</div>
-				<div class="col-sm-6">
-					<input class="form-control" type="date" id="id_fecha" name="fechaNacimiento" placeholder="Ingrese la fecha" maxlength="100">
-		 		</div>
-			</div>
-		</div>
 		
-		<div class="row" style="margin-top: 0%">
-		<%-- NOMBRE LABEL --%>
-			<div class="form-group col-sm-6" >
-				<div class="col-sm-4" >
-					<label class="control-label" for="id_correo">Estado</label>
-				</div>
-		<%-- TIPO DE TXT INPUT SELECT --%>
-				<div class="col-sm-8"  >
-					<select   name="estado" id="id_estado" class="form-control">
-					    <option value="" disabled selected>Seleccionar Estado</option>
-					    <option value="Casado">Casado</option>                                             
-					    <option value="Soltero">Soltero</option> 
-					    <option value="viudo"> Viudo</option> 
-					    <option value="Divorciado">Divorciado</option>
-					    <option value="Con Hijos"> Con Hijos</option>                                
-					 </select>
-				</div>
-			</div>
-		</div>
-		
+	
 		
 		<div class="row" style="margin-top: 2%" align="center"	>
 				<button id="id_registrar" type="button" class="btn btn-primary" >Crea Alumno</button>
@@ -99,7 +54,7 @@ $("#id_registrar").click(function (){
     	
     	$.ajax({
     		type: "POST",
-            url: "registraAlumno", 
+            url: "registraConcurso", 
             data: $('#id_form').serialize(),
             success: function(data){
             	limpiar();
@@ -117,10 +72,7 @@ $("#id_registrar").click(function (){
 
 function limpiar(){
 	$('#id_nombre').val('');
-	$('#id_dni').val('');
-	$('#id_correo').val('');
-	$('#id_fecha').val('');
-	$('#id_estado').val('');
+
 }
 
 $(document).ready(function() {
