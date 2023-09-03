@@ -14,6 +14,7 @@ import com.empresa.service.ConcursoService;
 @Controller
 public class ConcursoController {
 
+	
 	@Autowired
 	private ConcursoService service;
 	
@@ -37,4 +38,6 @@ public class ConcursoController {
 			
 			return ResponseEntity.ok(salida);
 		}
+	
+	
 }

@@ -37,21 +37,21 @@
 			<div class="row" style="margin-top: 0%">
 				<div class="form-group  col-sm-6">
 					<div class="col-sm-4">
-						<label class="control-label" for="id_fecha">Fecha Inicio</label>
+						<label class="control-label" for="id_fechaIni">Fecha Inicio</label>
 					</div>
 					<div class="col-sm-8">
 						<input class="form-control" type="date" id="id_fecha"
-							name="fechaNacimiento" placeholder="Ingrese la fecha"
+							name="fechaInicio" placeholder="Ingrese la fecha"
 							maxlength="100">
 					</div>
 				</div>
 				<div class="form-group  col-sm-6">
 					<div class="col-sm-4">
-						<label class="control-label" for="id_fecha">Fecha Fin</label>
+						<label class="control-label" for="id_fechaFin">Fecha Fin</label>
 					</div>
 					<div class="col-sm-8">
 						<input class="form-control" type="date" id="id_fecha"
-							name="fechaNacimiento" placeholder="Ingrese la fecha"
+							name="fechaFin" placeholder="Ingrese la fecha"
 							maxlength="100">
 					</div>
 				</div>
@@ -60,21 +60,16 @@
 			<div class="row" style="margin-top: 0%">
 				<div class="form-group col-sm-6">
 					<div class="col-sm-4">
-						<label class="form-check-label" for="gridCheck1">Activo</label>
+						<label class="control-label" for="id_estado" >Activo</label>
 					</div>
 					<div class="col-sm-8">
-						<input class="form-check-input" type="checkbox"
-							id="gridCheck1">
-
+						<input name="estado" class="custom-control-input" value="Activo" type="checkbox"
+							id="id_estado">
+							
 					</div>
 				</div>
+
 			</div>
-
-<div class="row" style="margin-top: 0%">
-
-
-</div>
-
 
 			<div class="row" style="margin-top: 2%" align="center">
 				<button id="id_registrar" type="button" class="btn btn-primary">Crea
@@ -91,7 +86,9 @@ $("#id_registrar").click(function (){
 	//Lanza la validacion.
 	var validator = $('#id_form').data('bootstrapValidator');
     validator.validate();
-    
+
+	
+   
     //Para ver la validacion en el sistema.
     if (validator.isValid()){
     	console.log('Es valido');
@@ -102,6 +99,7 @@ $("#id_registrar").click(function (){
             url: "registraConcurso", 
             data: $('#id_form').serialize(),
             success: function(data){
+            	estado == 1 ? "Activo" : "Inactivo"; 
             	limpiar();
             	validator.resetForm();
             	mostrarMensaje(data.MENSAJE);
@@ -147,6 +145,7 @@ $(document).ready(function() {
 
     
 });
+
 </script>
 
 </body>

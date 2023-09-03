@@ -27,6 +27,8 @@ public class Concurso {
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	@Temporal(TemporalType.DATE)
 	private Date fechaInicio;
+	@DateTimeFormat(pattern = "yyyy-MM-dd")
+	@Temporal(TemporalType.DATE)
 	private Date fechaFin;
 	private String estado;
 }
