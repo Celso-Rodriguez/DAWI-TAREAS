@@ -16,7 +16,6 @@ public class AlumnoServiceImpl implements AlumnoService {
 	
 	@Override
 	public Alumno insertaAlumno(Alumno obj) {
-		// TODO Auto-generated method stub
 		return repository.save(obj);
 	}
 

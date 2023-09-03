@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="esS" >
+<html lang="esS">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -16,27 +16,72 @@
 
 	<div class="container" >
 <h1>Registra Concurso</h1>
+<h5>Celso Rodriguez - i201412626</h5>
 
-	<form id="id_form"> 
-		<div class="row" style="margin-top: 5%">
-		
-			<div class="form-group col-sm-6">
-				<div class="col-sm-4" >
-					<label class="control-label" for="id_nombre" >Nombre</label>
-				</div>
-				<div class="col-sm-8">
-					<input class="form-control" type="text" id="id_nombre" name="nombre" placeholder="Ingrese el nombre" maxlength="40">
+	<form id="id_form">
+			<div class="row" style="margin-top: 5%">
+
+				<div class="form-group  col-sm-6">
+					<div class="col-sm-4">
+						<label class="control-label" for="id_nombre">Nombre</label>
+					</div>
+					<div class="col-sm-8">
+						<input class="form-control" type="text" id="id_nombre"
+							name="nombre" placeholder="Ingrese el nombre" maxlength="40">
+					
+					</div>
 				</div>
 			</div>
-		</div>	
-		
-		
-	
-		
-		<div class="row" style="margin-top: 2%" align="center"	>
-				<button id="id_registrar" type="button" class="btn btn-primary" >Crea Alumno</button>
-		</div>	
-	</form>
+
+
+			<div class="row" style="margin-top: 0%">
+				<div class="form-group  col-sm-6">
+					<div class="col-sm-4">
+						<label class="control-label" for="id_fecha">Fecha Inicio</label>
+					</div>
+					<div class="col-sm-8">
+						<input class="form-control" type="date" id="id_fecha"
+							name="fechaNacimiento" placeholder="Ingrese la fecha"
+							maxlength="100">
+					</div>
+				</div>
+				<div class="form-group  col-sm-6">
+					<div class="col-sm-4">
+						<label class="control-label" for="id_fecha">Fecha Fin</label>
+					</div>
+					<div class="col-sm-8">
+						<input class="form-control" type="date" id="id_fecha"
+							name="fechaNacimiento" placeholder="Ingrese la fecha"
+							maxlength="100">
+					</div>
+				</div>
+			</div>
+			
+			<div class="row" style="margin-top: 0%">
+				<div class="form-group col-sm-6">
+					<div class="col-sm-4">
+						<label class="form-check-label" for="gridCheck1">Activo</label>
+					</div>
+					<div class="col-sm-8">
+						<input class="form-check-input" type="checkbox"
+							id="gridCheck1">
+
+					</div>
+				</div>
+			</div>
+
+<div class="row" style="margin-top: 0%">
+
+
+</div>
+
+
+			<div class="row" style="margin-top: 2%" align="center">
+				<button id="id_registrar" type="button" class="btn btn-primary">Crea
+					Concurso</button>
+
+			</div>
+		</form>
 </div>
 
 <script type="text/javascript">
@@ -95,46 +140,6 @@ $(document).ready(function() {
                             max: 40,
                             message: 'El nombre es de 3 a 40 caracteres'
                         },
-                    }
-                },
-                dni:{
-                    selector: "#id_dni",
-                    validators:{
-                        notEmpty: {
-                             message: 'El dni es obligatorio'
-                        },
-                        regexp: {
-                            regexp: /^[0-9]{8}$/,
-                            message: 'el dni es 8 dígitos'
-                        }
-                    }
-                },
-                correo:{
-                    selector: "#id_correo",
-                    validators:{
-                        notEmpty: {
-                             message: 'El correo es obligatorio'
-                        },
-                        emailAddress: {
-                            message: 'El correo no es valido'
-                        }
-                    }
-                },
-                fechaNacimiento:{
-                    selector: "#id_fecha",
-                    validators:{
-                        notEmpty: {
-                             message: 'La fecha es obligatorio'
-                        }
-                    }
-                },
-                
-                estado:{
-                    selector: "#id_estado",
-                    validators:{
-                        notEmpty: {
-                             message: 'El estado es obligatorio'
-                        }
                     }
                 },
         }   
