@@ -29,6 +29,7 @@ public class ConcursoController {
 		public ResponseEntity<?> registra(Concurso obj) {
 			HashMap<String, String> salida= new HashMap<>();
 			
+			obj.setEstado(obj.isBolestado()?"Activo":"Inactivo");
 			Concurso objSalida = service.insertaConcurso(obj);
 			if(objSalida == null) {
 				salida.put("MENSAJE", "Error en el registro");

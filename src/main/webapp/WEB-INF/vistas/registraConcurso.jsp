@@ -63,7 +63,7 @@
 						<label class="control-label" for="id_estado" >Activo</label>
 					</div>
 					<div class="col-sm-8">
-						<input name="estado" class="custom-control-input" value="Activo" type="checkbox"
+						<input name="bolEstado" class="custom-control-input" type="checkbox"
 							id="id_estado">
 							
 					</div>
@@ -99,7 +99,6 @@ $("#id_registrar").click(function (){
             url: "registraConcurso", 
             data: $('#id_form').serialize(),
             success: function(data){
-            	estado == 1 ? "Activo" : "Inactivo"; 
             	limpiar();
             	validator.resetForm();
             	mostrarMensaje(data.MENSAJE);
