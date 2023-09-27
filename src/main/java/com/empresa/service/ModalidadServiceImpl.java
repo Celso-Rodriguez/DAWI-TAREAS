@@ -1,6 +1,7 @@
 package com.empresa.service;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,6 +22,28 @@ public class ModalidadServiceImpl implements ModalidadService {
 
 	public List<Modalidad> buscaPorNombre(String nombre) {
 		return repository.findByNombreIgnoreCase(nombre);
+	}
+
+	@Override
+	public List<Modalidad> listaPorNombre(String nombre) {
+		return repository.findByNombreIgnoreCase(nombre);
+
+	}
+
+	@Override
+	public Modalidad actualizaModalidad(Modalidad obj) {
+		return repository.save(obj);
+
+	}
+
+	@Override
+	public List<Modalidad> listaPorNombreLike(String nombre) {
+		return repository.findByNombreLike(nombre);
+	}
+
+	@Override
+	public Optional<Modalidad> buscaModalidad(int idModalidad) {
+		return repository.findById(idModalidad);
 	}
 	
 	
