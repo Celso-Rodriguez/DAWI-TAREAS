@@ -13,6 +13,7 @@
 <link rel="stylesheet" href="css/bootstrap.css"/>
 <link rel="stylesheet" href="css/dataTables.bootstrap.min.css"/>
 <link rel="stylesheet" href="css/bootstrapValidator.css"/>
+
 <title>Ejemplos de CIBERTEC - Jorge Jacinto </title>
 </head>
 <body> 
@@ -58,6 +59,8 @@
 						</div>
 					</div>
 		  </div>
+		  
+		  
   
   	 <div class="modal fade" id="id_div_modal_registra" >
 			<div class="modal-dialog" style="width: 60%">
@@ -87,25 +90,25 @@
 		                                    <div class="form-group">
 		                                        <label class="col-lg-3 control-label" for="id_reg_num_hombres"># Hombres</label>
 		                                        <div class="col-lg-3">
-													<input class="form-control" id="id_reg_num_hombres" name="numHombres" placeholder="Ingrese el número de hombres" type="text" maxlength="2"/>
+													<input class="form-control" id="id_reg_num_hombres" name="numHombres" placeholder="Ingrese el nÃºmero de hombres" type="text" maxlength="2"/>
 		                                        </div>
 		                                    </div>
 		                                    <div class="form-group">
 		                                        <label class="col-lg-3 control-label" for="id_reg_num_mujeres"># Mujeres</label>
 		                                        <div class="col-lg-3">
-													<input class="form-control" id="id_reg_num_mujeres" name="numMujeres" placeholder="Ingrese el número de mujeres" type="text" maxlength="2"/>
+													<input class="form-control" id="id_reg_num_mujeres" name="numMujeres" placeholder="Ingrese el nÃºmero de mujeres" type="text" maxlength="2"/>
 		                                        </div>
 		                                    </div>		   
 		                                    <div class="form-group">
-		                                        <label class="col-lg-3 control-label" for="id_reg_maxima">Edad Máxima</label>
+		                                        <label class="col-lg-3 control-label" for="id_reg_maxima">Edad MÃ¡xima</label>
 		                                        <div class="col-lg-3">
-													<input class="form-control" id="id_reg_maxima" name="edadMaxima" placeholder="Ingrese la edad máxima" type="text" maxlength="2"/>
+													<input class="form-control" id="id_reg_maxima" name="edadMaxima" placeholder="Ingrese la edad mÃ¡xima" type="text" maxlength="2"/>
 		                                        </div>
 		                                    </div>   
 		                                    <div class="form-group">
-		                                        <label class="col-lg-3 control-label" for="id_reg_minima">Edad Mínima</label>
+		                                        <label class="col-lg-3 control-label" for="id_reg_minima">Edad MÃ­nima</label>
 		                                        <div class="col-lg-3">
-													<input class="form-control" id="id_reg_minima" name="edadMinima" placeholder="Ingrese la edad mínima" type="text" maxlength="2"/>
+													<input class="form-control" id="id_reg_minima" name="edadMinima" placeholder="Ingrese la edad mÃ­nima" type="text" maxlength="2"/>
 		                                        </div>
 		                                    </div>   
 		                                    <div class="form-group">
@@ -115,7 +118,7 @@
 		                                        </div>
 		                                    </div>    
 		                                    <div class="form-group">
-		                                        <label class="col-lg-3 control-label" for="id_reg_deporte">Deporte</label>
+		                                        <label class="col-lg-3 control-label" for="id_reg_deporte" >Deporte</label>
 		                                        <div class="col-lg-3">
 													 <select id="id_reg_deporte" name="deporte" class='form-control'>
 							                            	<option value=" ">[Seleccione]</option>    
@@ -132,9 +135,9 @@
 		                        </div>
 		                        
 		                    </div>
-		                </form>   
-				
-				</div>
+		                </form>
+		                
+		                				</div>
 			</div>
 		</div>
 			
@@ -173,25 +176,25 @@
 		                                    <div class="form-group">
 		                                        <label class="col-lg-3 control-label" for="id_num_hombres"># Hombres</label>
 		                                        <div class="col-lg-3">
-													<input class="form-control" id="id_act_num_hombres" name="numHombres" placeholder="Ingrese el número de hombres" type="text" maxlength="2"/>
+													<input class="form-control" id="id_act_num_hombres" name="numHombres" placeholder="Ingrese el nÃºmero de hombres" type="text" maxlength="2"/>
 		                                        </div>
 		                                    </div>
 		                                    <div class="form-group">
 		                                        <label class="col-lg-3 control-label" for="id_num_mujeres"># Mujeres</label>
 		                                        <div class="col-lg-3">
-													<input class="form-control" id="id_act_num_mujeres" name="numMujeres" placeholder="Ingrese el número de mujeres" type="text" maxlength="2"/>
+													<input class="form-control" id="id_act_num_mujeres" name="numMujeres" placeholder="Ingrese el nÃºmero de mujeres" type="text" maxlength="2"/>
 		                                        </div>
 		                                    </div>		   
 		                                    <div class="form-group">
-		                                        <label class="col-lg-3 control-label" for="id_maxima">Edad Máxima</label>
+		                                        <label class="col-lg-3 control-label" for="id_maxima">Edad MÃ¡xima</label>
 		                                        <div class="col-lg-3">
-													<input class="form-control" id="id_act_maxima" name="edadMaxima" placeholder="Ingrese la edad máxima" type="text" maxlength="2"/>
+													<input class="form-control" id="id_act_maxima" name="edadMaxima" placeholder="Ingrese la edad mÃ¡xima" type="text" maxlength="2"/>
 		                                        </div>
 		                                    </div>   
 		                                    <div class="form-group">
-		                                        <label class="col-lg-3 control-label" for="id_minima">Edad Mínima</label>
+		                                        <label class="col-lg-3 control-label" for="id_minima">Edad MÃ­nima</label>
 		                                        <div class="col-lg-3">
-													<input class="form-control" id="id_act_minima" name="edadMinima" placeholder="Ingrese la edad mínima" type="text" maxlength="2"/>
+													<input class="form-control" id="id_act_minima" name="edadMinima" placeholder="Ingrese la edad mÃ­nima" type="text" maxlength="2"/>
 		                                        </div>
 		                                    </div>    
 		                                    <div class="form-group">
@@ -385,7 +388,7 @@ $("#id_btn_actualiza").click(function(){
         		selector : '#id_reg_num_hombres',
                 validators: {
                     notEmpty: {
-                        message: 'El número de hombres es un campo obligatorio'
+                        message: 'El nÃºmero de hombres es un campo obligatorio'
                     },
                     lessThan: {
 		                value: 15,
@@ -403,7 +406,7 @@ $("#id_btn_actualiza").click(function(){
         		selector : '#id_reg_num_mujeres',
                 validators: {
                 	notEmpty: {
-                        message: 'El número de mujeres es un campo obligatorio'
+                        message: 'El nÃºmero de mujeres es un campo obligatorio'
                     },
                     lessThan: {
 		                value: 15,
@@ -421,7 +424,7 @@ $("#id_btn_actualiza").click(function(){
         		selector : '#id_reg_maxima',
                 validators: {
                 	notEmpty: {
-                        message: 'La edad máxima es un campo obligatorio'
+                        message: 'La edad mÃ¡xima es un campo obligatorio'
                     },
                     lessThan: {
 		                value: 35,
@@ -439,7 +442,7 @@ $("#id_btn_actualiza").click(function(){
         		selector : '#id_reg_minima',
                 validators: {
                 	notEmpty: {
-                        message: 'La edad mínima es un campo obligatorio'
+                        message: 'La edad mÃ­nima es un campo obligatorio'
                     },
                     lessThan: {
 		                value: 35,
@@ -505,7 +508,7 @@ $("#id_btn_actualiza").click(function(){
         		selector : '#id_act_num_hombres',
                 validators: {
                     notEmpty: {
-                        message: 'El número de hombres es un campo obligatorio'
+                        message: 'El nÃºmero de hombres es un campo obligatorio'
                     },
                     lessThan: {
 		                value: 15,
@@ -523,7 +526,7 @@ $("#id_btn_actualiza").click(function(){
         		selector : '#id_act_num_mujeres',
                 validators: {
                 	notEmpty: {
-                        message: 'El número de mujeres es un campo obligatorio'
+                        message: 'El nÃºmero de mujeres es un campo obligatorio'
                     },
                     lessThan: {
 		                value: 15,
@@ -541,7 +544,7 @@ $("#id_btn_actualiza").click(function(){
         		selector : '#id_act_maxima',
                 validators: {
                 	notEmpty: {
-                        message: 'La edad máxima es un campo obligatorio'
+                        message: 'La edad mÃ¡xima es un campo obligatorio'
                     },
                     lessThan: {
 		                value: 35,
@@ -559,7 +562,7 @@ $("#id_btn_actualiza").click(function(){
         		selector : '#id_act_minima',
                 validators: {
                 	notEmpty: {
-                        message: 'La edad mínima es un campo obligatorio'
+                        message: 'La edad mÃ­nima es un campo obligatorio'
                     },
                     lessThan: {
 		                value: 35,
